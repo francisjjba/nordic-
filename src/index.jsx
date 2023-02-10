@@ -1,7 +1,13 @@
-import React from 'react';
-import { createRoot } from 'react-dom/client';
+class animal {
+    constructor(type){
+        this.type=type;
+    }
+    getDogType=()=>{
+        console.log(this.type)
+    }
+}
 
-const container = document.getElementById('root');
-const root = createRoot(container);
 
-root.render(<h1>Hello React?</h1>);
+const a = new animal('dog')
+
+a.getDogType

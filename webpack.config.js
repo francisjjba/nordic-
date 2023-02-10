@@ -10,6 +10,9 @@ module.exports = {
 
   },
   mode: 'development',
+  resolve:{
+    extensions:['.js', '.jsx', '.json'],
+  },
   module: {
     rules: [
       {
@@ -23,5 +26,9 @@ module.exports = {
     template: './public/index.html',
     filename: 'index.html',
   })],
+  devServer: {   
+    port: 3000,
+    open: true,
+  },
 
 };
